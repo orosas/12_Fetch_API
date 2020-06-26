@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <title>Fetch API Test</title>
 </head>
 <body>
-    <button id="getText">Get Text</button>
-    <button id="getUsers">Get JSON</button>
-    <button id="getPosts">Get API Data</button>
-    <div id="output"></div>
-    <script src=""></script>
+    <div class="container">
+        <h1 class="display-4 mb-4 text-primary">Fetch API Sandbox</h1>
+        <div class="d-flex">
+            <button class="btn btn-secondary mr-4" id="getText">Get Text</button>
+            <button class="btn btn-success mr-4" id="getUsers">Get JSON</button>
+            <button class="btn btn-info" id="getPosts">Get API Data</button>
+        </div>
+        <hr>
+        <div id="output"></div>
+        <form id="addPost">
+            <div class="form-group">
+                <input type="text" id="title" placeholder="Título" class="form-control">
+            </div>
+            <div class="form-group">
+                <textarea type="text" id="body" placeholder="Body"  class="form-control"></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="btn btn-primary">
+        </form>
+    </div>
     <script src="./app.js"></script>
 </body>
 </html>
